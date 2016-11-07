@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 14:14:41 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 18:35:42 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/07 21:20:45 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,10 @@ char		**ft_strsplit(char const *str, char c)
 {
 	int		w;
 	int		i;
-	int		j;
 	char	**tab;
 
+	if (!str)
+		return (NULL);
 	if ((tab = malloc(sizeof(char**) * (ft_nb_words(str, c) + 1))) == NULL)
 		return (0);
 	i = 0;
@@ -68,12 +69,11 @@ char		**ft_strsplit(char const *str, char c)
 			i++;
 		if (str[i])
 		{
-			j = 0;
-			if (((tab[w] = malloc(sizeof(char*) * (wlen(str, i, c) + 1))) == 0))
+			if ((tab[w++] = ft_strndup(str + i, wlen(str, i, c))) == 0)
 				return (0);
+			tab[w - 1][wlen(str, i, c)] = '\0';
 			while (str[i] != c && str[i])
-				tab[w][j++] = str[i++];
-			tab[w++][j] = '\0';
+				i++;
 		}
 	}
 	tab[w] = 0;

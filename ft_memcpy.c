@@ -6,11 +6,11 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 10:51:18 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 17:27:53 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/07 18:55:40 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

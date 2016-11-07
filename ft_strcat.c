@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 11:30:31 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 18:03:07 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/07 19:04:15 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 char			*ft_strcat(char *dest, const char *src)
 {
-	return (ft_strcpy(dest + ft_strlen(dest), src));
+	ft_strcpy(dest + ft_strlen(dest), src);
+	return (dest);
 }

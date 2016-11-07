@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 14:39:26 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 18:32:42 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/07 19:00:54 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ char	*ft_strnew(size_t size)
 
 	if ((str = (char*)malloc(size + 1)) == NULL)
 		return (NULL);
-	ft_bzero((void*)str, size);
+	ft_bzero((void*)str, size + 1);
 	return (str);
 }

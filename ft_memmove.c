@@ -6,11 +6,11 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 11:03:04 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 17:29:01 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/07 18:55:59 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

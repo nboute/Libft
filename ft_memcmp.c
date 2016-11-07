@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 11:17:40 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 17:53:29 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/07 19:19:11 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int		ft_memcmp(const void *ptr1, const void *ptr2, size_t n)
 	unsigned char	*p2;
 	size_t			i;
 
+	if (n == 0)
+		return (0);
 	i = 0;
 	p1 = (unsigned char*)ptr1;
 	p2 = (unsigned char*)ptr2;

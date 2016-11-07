@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 15:10:03 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 18:07:18 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/07 19:58:18 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@ int	ft_strequ(char const *s1, char const *s2)
 	int	i;
 
 	i = 0;
+	if (!s1 && !s2)
+		return (1);
+	if (!s1 || !s2)
+		return (0);
 	while (s1[i] == s2[i] && s1[i] && s2[i])
 		i++;
 	if (s1[i] == s2[i])

@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 14:59:53 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 18:13:30 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/07 19:55:54 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char			*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*str;
 	size_t	n;
 
+	if (!f || !s)
+		return (NULL);
 	n = 0;
 	if ((str = (char*)malloc(ft_strlen(s) + 1)) == NULL)
 		return (NULL);

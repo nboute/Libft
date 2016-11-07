@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 13:01:40 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 17:52:42 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/07 19:37:41 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list		*ft_lstnew(void const *content, size_t content_size)
 
 	if ((new = (t_list*)malloc(sizeof(t_list))) == NULL)
 		return (NULL);
-	if (!content_size)
+	if (!content_size || !content)
 	{
 		new->content = NULL;
 		new->content_size = 0;

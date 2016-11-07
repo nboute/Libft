@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 15:40:33 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 18:45:45 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/07 20:03:03 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strtrim(char const *s)
 	char	*str;
 
 	i = 0;
+	if (!s)
+		return (NULL);
 	while (*s == ' ' || *s == '\t' || *s == '\n')
 		s++;
 	if (*s)
@@ -33,5 +35,6 @@ char	*ft_strtrim(char const *s)
 	if ((str = (char*)malloc(last + 1)) == NULL)
 		return (NULL);
 	ft_strncpy(str, s, last);
+	str[last] = '\0';
 	return (str);
 }
