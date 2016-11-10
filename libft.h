@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 18:59:08 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/10 16:42:27 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void				*ft_memalloc(size_t size);
 void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
-void				*ft_memchr(void *ptr, int c, size_t n);
+const void			*ft_memchr(const void *ptr, int c, size_t n);
 int					ft_memcmp(const void *ptr1, const void *ptr2, size_t n);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
 void				ft_memdel(void **ap);

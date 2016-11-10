@@ -6,13 +6,13 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 11:11:31 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 17:53:10 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/10 16:43:41 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(void *ptr, int c, size_t n)
+const void	*ft_memchr(const void *ptr, int c, size_t n)
 {
 	unsigned char	*p;
 	size_t			i;
@@ -22,7 +22,7 @@ void	*ft_memchr(void *ptr, int c, size_t n)
 	while (i < n)
 	{
 		if (p[i] == (unsigned char)c)
-			return ((void*)(p + i));
+			return ((const void*)(p + i));
 		i++;
 	}
 	return (NULL);

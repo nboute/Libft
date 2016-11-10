@@ -6,13 +6,17 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2016/11/07 17:48:57 by nboute           ###   ########.fr        #
+#    Updated: 2016/11/10 12:35:48 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+.PHONY: make all clean fclean
 
 NAME = libft.a
 
 CFLAGS = -Wall -Wextra -Werror
+
+CC = gcc
 
 SRCS = ft_atoi.c \
 	   ft_bzero.c \
@@ -78,17 +82,16 @@ SRCS = ft_atoi.c \
 	   ft_tolower.c \
 	   ft_toupper.c
 
-
 OBJ = $(SRCS:.c=.o)
-
-INCLUDES = includes/libft.h
 
 all : $(NAME)
 
-$(NAME) :
-	gcc -c $(CFLAGS) $(SRCS) -I$(INCLUDES)
+$(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
+
+$(OBJ) : $(SRCS)
+	$(CC) -c $(SRCS) $(CFLAGS)
 
 clean :
 	rm -f $(OBJ)
@@ -96,4 +99,4 @@ clean :
 fclean : clean
 	rm -f $(NAME)
 
-re : clean fclean all
+re : fclean all
