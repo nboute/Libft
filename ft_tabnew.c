@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_tabnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/03 12:51:05 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/22 16:46:48 by nboute           ###   ########.fr       */
+/*   Created: 2016/11/21 11:58:43 by nboute            #+#    #+#             */
+/*   Updated: 2016/11/21 11:59:26 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strrchr(const char *str, int c)
+char	**ft_tabnew(int y, int x, char c)
 {
 	int		i;
+	int		j;
+	char	**tab;
 
-	i = ft_strlen(str);
-	while (i >= 0)
+	if ((tab = (char**)malloc(sizeof(char*) * (y + 1))) == NULL)
+		return (NULL);
+	i = 0;
+	while (i < y)
 	{
-		if (str[i] == (unsigned char)c)
-			return ((char*)(str + i));
-		i--;
+		if ((tab[i] = (char*)malloc(x + 1)) == NULL)
+			return (NULL);
+		j = 0;
+		while (j < x)
+			tab[i][j++] = c;
+		tab[i][j] = '\0';
 	}
-	return (NULL);
+	tab[i] = NULL;
+	return (tab);
 }

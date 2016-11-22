@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 14:30:50 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/07 18:55:26 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/22 16:43:11 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ void	*ft_memalloc(size_t size)
 
 	if ((mem = malloc(size)) == NULL)
 		return (NULL);
-	bzero(mem, size);
+	ft_bzero(mem, size);
 	return (mem);
 }

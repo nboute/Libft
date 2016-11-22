@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2016/11/10 12:35:48 by nboute           ###   ########.fr        #
+#    Updated: 2016/11/22 19:27:28 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,10 @@ SRCS = ft_atoi.c \
 	   ft_putstr.c \
 	   ft_putstr_fd.c \
 	   ft_strcat.c \
+	   ft_strccpy.c \
+	   ft_strcdup.c \
 	   ft_strchr.c \
+	   ft_strclen.c \
 	   ft_strclr.c \
 	   ft_strcmp.c \
 	   ft_strcpy.c \
@@ -79,6 +82,7 @@ SRCS = ft_atoi.c \
 	   ft_strtolower.c \
 	   ft_strtrim.c \
 	   ft_tabdel.c \
+	   ft_tabnew.c \
 	   ft_tolower.c \
 	   ft_toupper.c
 
