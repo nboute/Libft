@@ -6,11 +6,11 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2016/11/22 19:27:28 by nboute           ###   ########.fr        #
+#    Updated: 2016/11/26 15:17:29 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-.PHONY: make all clean fclean
+.PHONY: make all clean fclean re
 
 NAME = libft.a
 
@@ -50,6 +50,7 @@ SRCS = ft_atoi.c \
 	   ft_putnbr_fd.c \
 	   ft_putstr.c \
 	   ft_putstr_fd.c \
+	   ft_sqrt.c \
 	   ft_strcat.c \
 	   ft_strccpy.c \
 	   ft_strcdup.c \

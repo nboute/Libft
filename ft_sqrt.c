@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_last.c                                      :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/07 17:20:09 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/23 16:59:10 by nboute           ###   ########.fr       */
+/*   Created: 2016/08/04 18:53:47 by nboute            #+#    #+#             */
+/*   Updated: 2016/11/26 15:16:02 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-t_list	*ft_lst_last(t_list *list)
+int		ft_sqrt(int nb)
 {
-	t_list	*tmp;
+	int div;
 
-	if (!list)
-		return (NULL);
-	tmp = list;
-	while (tmp->next)
-		tmp = tmp->next;
-	return (tmp);
+	if (nb <= 0)
+		return (0);
+	if (nb == 1)
+		return (1);
+	div = 2;
+	while (div < nb / div)
+		div++;
+	if (div * div == nb)
+		return (div);
+	return (0);
 }
