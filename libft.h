@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/29 19:34:54 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/29 19:39:37 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ typedef struct		s_list
 
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
-size_t				ft_getnbnbr(char *str);
 int					ft_getnbr(const char *str);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
