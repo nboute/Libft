@@ -1,35 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tabnew.c                                        :+:      :+:    :+:   */
+/*   ft_getnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/21 11:58:43 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/29 14:41:53 by nboute           ###   ########.fr       */
+/*   Created: 2016/11/29 11:41:31 by nboute            #+#    #+#             */
+/*   Updated: 2016/11/29 11:41:46 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_tabnew(int y, int x, char c)
+int	ft_getnbr(const char *str)
 {
-	int		i;
-	int		j;
-	char	**tab;
+	int	nb;
+	int	i;
+	int sign;
 
-	if ((tab = (char**)malloc(sizeof(char*) * (y + 1))) == NULL)
-		return (NULL);
 	i = 0;
-	while (i < y)
-	{
-		if ((tab[i] = (char*)malloc(x + 1)) == NULL)
-			return (NULL);
-		j = 0;
-		while (j < x)
-			tab[i][j++] = c;
-		tab[i++][j] = '\0';
-	}
-	tab[i] = NULL;
-	return (tab);
+	sign = 1;
+	if (str[i] == '-')
+		sign = -1;
+	if (str[i] == '-' || str[i] == '+')
+		i++;
+	nb = 0;
+	while (str[i] >= '0' && str[i] <= '9')
+		nb = (nb * 10) + (str[i++] - '0');
+	return (nb * sign);
 }
