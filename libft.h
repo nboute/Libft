@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/29 11:44:28 by nboute           ###   ########.fr       */
+/*   Updated: 2016/11/29 16:01:52 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,26 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+/*
+ ** Proprietes get_next_line
+*/
+
+# define BUFF_SIZE 1
+
+typedef struct		s_line
+{
+	char			*data;
+	int				fd;
+	struct s_line	*next;
+}					t_line;
+
+int					get_next_line(const int fd, char **line);
+t_line				*ft_checkfd(t_line **list, int fd);
+char				*ft_read(int fd, char *str);
+
+/*
+ ** Proprietes Libft
+*/
 typedef struct		s_list
 {
 	void			*content;

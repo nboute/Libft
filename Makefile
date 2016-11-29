@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2016/11/29 11:44:41 by nboute           ###   ########.fr        #
+#    Updated: 2016/11/29 16:00:52 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,7 +87,8 @@ SRCS = ft_atoi.c \
 	   ft_tabdel.c \
 	   ft_tabnew.c \
 	   ft_tolower.c \
-	   ft_toupper.c
+	   ft_toupper.c \
+	   get_next_line.c
 
 OBJ = $(SRCS:.c=.o)
 
