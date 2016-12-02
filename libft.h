@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2016/12/02 14:37:49 by nboute           ###   ########.fr       */
+/*   Updated: 2016/12/02 15:21:33 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ void				*ft_memset(void *ptr, int value, size_t num);
 void				ft_memswap(void **adr1, void **adr2);
 void				ft_putchar(char c);
 void				ft_putchar_fd(char c, int fd);
+void				ft_putcstr(char *str, int c);
 void				ft_putendl(char const *s);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr(int n);
