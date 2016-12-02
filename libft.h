@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/29 19:39:37 by nboute           ###   ########.fr       */
+/*   Updated: 2016/12/02 14:37:49 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ void				ft_putendl(char const *s);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
+void				ft_putnstr(char const *str, size_t n);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
 int					ft_sqrt(int nb);
