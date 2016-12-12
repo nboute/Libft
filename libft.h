@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2016/12/03 17:28:05 by nboute           ###   ########.fr       */
+/*   Updated: 2016/12/12 11:20:08 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ void				ft_lstadd(t_list **alst, t_list *newl);
 void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+float				ft_map(float val, float range, float min2, float max2);
 void				*ft_memalloc(size_t size);
 void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void				*ft_memchr(const void *ptr, int c, size_t n);
@@ -81,6 +82,7 @@ void				ft_putnchar(char c, size_t n);
 void				ft_putnstr(char const *str, size_t n);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
+void				ft_putwchart(wchar_t *str);
 int					ft_sqrt(int nb);
 char				*ft_strcat(char *dest, const char *src);
 char				*ft_strccpy(char *dest, const char *src, int c);
@@ -118,5 +120,6 @@ void				ft_tabdel(char **tab);
 char				**ft_tabnew(int y, int x, char c);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+size_t				ft_wchartlen(wchar_t *str);
 
 #endif
