@@ -1,32 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_map.c                                           :+:      :+:    :+:   */
+/*   ft_tablen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/12 11:09:24 by nboute            #+#    #+#             */
-/*   Updated: 2016/12/15 03:46:26 by nboute           ###   ########.fr       */
+/*   Created: 2017/01/03 17:54:46 by nboute            #+#    #+#             */
+/*   Updated: 2017/01/03 17:55:54 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-float		ft_map(float val, float range, float min2, float max2)
+size_t	ft_tablen(char **tab)
 {
-	if (!range)
-		return (0);
-	return (min2 + ((max2 - min2) * (val / range)));
-}
+	size_t	n;
 
-int		main(void)
-{
-	float	i;
-
-	i = 0;
-	while (i < 10)
-	{
-		printf("%i\n", (int)ft_map(i, 9, 0, 255));
-		i++;
-	}
+	n = 0;
+	while(tab[n])
+		n++;
+	return (n);
 }
