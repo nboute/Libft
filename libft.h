@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/03 17:56:21 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/10 20:16:24 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
  ** Proprietes get_next_line
 */
 
-# define BUFF_SIZE 1
+# define BUFF_SIZE 512
 
 typedef struct		s_line
 {
