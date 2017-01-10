@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/21 12:28:00 by nboute            #+#    #+#             */
-/*   Updated: 2016/11/29 16:01:12 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/10 19:20:37 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,10 @@ int					get_next_line(const int fd, char **line)
 	current = ft_checkfd(&list, fd);
 	current->data = ft_read(fd, (current->data));
 	if (!*(current->data))
+	{
+		free(current);
 		return (0);
+	}
 	*line = ft_strcdup(current->data, '\n');
 	tmp = current->data;
 	size = ft_strclen(tmp, '\n');
