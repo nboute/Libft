@@ -6,13 +6,13 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 22:35:06 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/12 22:37:51 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/12 23:41:21 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_utoa(unsigned int n)
+char		*ft_utoa(unsigned long n)
 {
 	char	*nb;
 	short	exp;

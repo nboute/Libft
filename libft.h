@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/12 22:46:39 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/12 23:43:09 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,8 @@ int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
-char				*ft_itoa(int n);
-char				*ft_itoa_base(int value, int base, short min);
+char				*ft_itoa(long n);
+char				*ft_itoa_base(long value, int base, short min);
 int					ft_isprint(int c);
 t_list				*ft_lst_last(t_list *list);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
@@ -124,8 +124,8 @@ size_t				ft_tablen(char **tab);
 char				**ft_tabnew(int y, int x, char c);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
-char				*ft_utoa(unsigned int n);
-char				*ft_utoa_base(unsigned int value, int base, short min);
+char				*ft_utoa(unsigned long n);
+char				*ft_utoa_base(unsigned long value, int base, short min);
 size_t				ft_wchartlen(wchar_t *str);
 
 #endif

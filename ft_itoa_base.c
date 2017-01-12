@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 22:24:29 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/12 22:44:59 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/12 23:42:34 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,8 @@ static char	*ft_itoa_base_p2(char *str, int *vals, long nb, short min)
 	return (str);
 }
 
-char		*ft_itoa_base(int value, int base, short min)
+char		*ft_itoa_base(long nb, int base, short min)
 {
-	long	nb;
 	int		vals[2];
 	char	*str;
 	short	neg;
@@ -38,7 +37,6 @@ char		*ft_itoa_base(int value, int base, short min)
 	neg = 0;
 	vals[0] = base;
 	vals[1] = 0;
-	nb = (long)value;
 	if (vals[0] < 2 || vals[0] > 35)
 		return ((void*)0);
 	if (nb < 0)
