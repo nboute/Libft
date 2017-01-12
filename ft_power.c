@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tablen.c                                        :+:      :+:    :+:   */
+/*   ft_power.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/03 17:54:46 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/12 22:30:25 by nboute           ###   ########.fr       */
+/*   Created: 2017/01/12 22:25:39 by nboute            #+#    #+#             */
+/*   Updated: 2017/01/12 22:26:09 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t	ft_tablen(char **tab)
+long	ft_power(long nb, int pow)
 {
-	size_t	n;
-
-	n = 0;
-	while (tab[n])
-		n++;
-	return (n);
+	if (pow == 0)
+		return (1);
+	return (nb * ft_power(nb, pow - 1));
 }

@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/01/11 16:32:39 by nboute           ###   ########.fr        #
+#    Updated: 2017/01/12 22:32:04 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRCS = ft_atoi.c \
 	   ft_isdigit.c \
 	   ft_isprint.c \
 	   ft_itoa.c \
+	   ft_itoa_base.c \
 	   ft_lstadd.c \
 	   ft_lst_last.c \
 	   ft_lstdel.c \
@@ -44,6 +45,7 @@ SRCS = ft_atoi.c \
 	   ft_memmove.c \
 	   ft_memset.c \
 	   ft_memswap.c \
+	   ft_power.c \
 	   ft_putchar.c \
 	   ft_putchar_fd.c \
 	   ft_putcstr.c \

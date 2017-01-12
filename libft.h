@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/11 16:33:00 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/12 22:27:23 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ int					ft_isalpha(int c);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
 char				*ft_itoa(int n);
+char				*ft_itoa_base(int value, int base, short min);
 int					ft_isprint(int c);
 t_list				*ft_lst_last(t_list *list);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
@@ -71,6 +72,7 @@ void				ft_memdel(void **ap);
 void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memset(void *ptr, int value, size_t num);
 void				ft_memswap(void **adr1, void **adr2);
+long				ft_power(long nb, int pow);
 void				ft_putchar(char c);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putcstr(char *str, int c);
