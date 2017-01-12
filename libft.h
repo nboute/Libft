@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/12 22:27:23 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/12 22:46:39 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,6 +124,8 @@ size_t				ft_tablen(char **tab);
 char				**ft_tabnew(int y, int x, char c);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+char				*ft_utoa(unsigned int n);
+char				*ft_utoa_base(unsigned int value, int base, short min);
 size_t				ft_wchartlen(wchar_t *str);
 
 #endif
