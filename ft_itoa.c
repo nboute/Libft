@@ -6,11 +6,12 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/12 23:45:46 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/16 17:51:28 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h>
 
 char		*ft_itoa(long n)
 {
@@ -19,6 +20,9 @@ char		*ft_itoa(long n)
 	short	i;
 	short	neg;
 
+	nb = NULL;
+	if (n == LONG_MIN)
+		return (ft_strcpy(nb, "-9223372036854775808"));
 	neg = (n < 0) ? 1 : 0;
 	n = (n < 0) ? -n : n;
 	exp = 0;
