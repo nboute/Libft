@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/01/12 22:46:22 by nboute           ###   ########.fr        #
+#    Updated: 2017/01/18 18:36:02 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ CC = gcc
 SRCS = ft_atoi.c \
 	   ft_bzero.c \
 	   ft_getnbr.c \
+	   ft_getnbr_base.c \
 	   ft_isalnum.c \
 	   ft_isalpha.c \
 	   ft_isascii.c \
@@ -45,6 +46,8 @@ SRCS = ft_atoi.c \
 	   ft_memmove.c \
 	   ft_memset.c \
 	   ft_memswap.c \
+	   ft_numdigits.c \
+	   ft_numdigits_base.c \
 	   ft_power.c \
 	   ft_putchar.c \
 	   ft_putchar_fd.c \
