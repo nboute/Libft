@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 22:39:23 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/20 20:40:39 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/20 20:43:23 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static char	*ft_utoa_base_p2(char *str, int *vals,
 	size_t	i;
 
 	i = 0;
-	while (vals[1] > 0)
+	while (vals[1] >= 0)
 	{
 		str[i] = nb / ft_power(vals[0], vals[1]);
 		str[i] = (str[i] < 10) ? str[i] + '0' : str[i] - 10 + 'A' + min * 32;
