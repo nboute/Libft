@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/01/18 18:36:02 by nboute           ###   ########.fr        #
+#    Updated: 2017/01/20 20:53:12 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,8 +57,8 @@ SRCS = ft_atoi.c \
 	   ft_putnbr.c \
 	   ft_putnbr_fd.c \
 	   ft_putnchar.c \
-	   ft_putnstr.c \
 	   ft_putstr.c \
+	   ft_putstrn.c \
 	   ft_putstr_fd.c \
 	   ft_sqrt.c \
 	   ft_strcat.c \
