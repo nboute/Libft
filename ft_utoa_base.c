@@ -6,13 +6,13 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 22:39:23 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/12 23:49:19 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/20 20:37:19 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*ft_utoa_base_p2(char *str, unsigned int *vals,
+static char	*ft_utoa_base_p2(char *str, int *vals,
 		unsigned long nb, short min)
 {
 	size_t	i;
@@ -31,7 +31,7 @@ static char	*ft_utoa_base_p2(char *str, unsigned int *vals,
 
 char		*ft_utoa_base(unsigned long nb, int base, short min)
 {
-	unsigned int	vals[2];
+	int	vals[2];
 	char			*str;
 
 	vals[0] = base;
