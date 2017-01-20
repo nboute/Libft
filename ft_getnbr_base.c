@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/18 17:40:56 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/18 18:39:59 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/20 16:42:51 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_getnbr_base(const char *s, size_t b)
 		i++;
 	nb = 0;
 	while (((s[i] >= '0' && s[i] <= '9') || (b > 10 && ft_tolower(s[i]) >= 'a'
-					&& ft_tolower(s[i] <= 'a' + (int)b - 10))) && d-- && s[i])
+					&& ft_tolower(s[i] < 'a' + (int)b - 10))) && d-- && s[i])
 	{
 		val = (s[i] >= '0' && s[i] <= '9') ? s[i] - '0' :
 			s[i] - 'a' + 10;
