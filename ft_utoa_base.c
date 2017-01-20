@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/12 22:39:23 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/20 20:37:19 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/20 20:40:39 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char		*ft_utoa_base(unsigned long nb, int base, short min)
 	vals[1] = 0;
 	if (base < 2 || base > 35)
 		return ((void*)0);
-	while (nb / ft_power(vals[0], vals[1]) >= vals[0])
+	while (nb / ft_power(vals[0], vals[1]) >= (unsigned long)vals[0])
 		vals[1]++;
 	str = (char*)malloc(vals[1] + 2);
 	ft_utoa_base_p2(str, &vals[0], nb, min);
