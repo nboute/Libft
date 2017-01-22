@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/20 20:52:48 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/22 07:44:42 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,11 @@ int					ft_getnbr_base(const char *s, size_t b);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
+int					ft_isblank(char c);
 int					ft_isdigit(int c);
+int					ft_isprint(int c);
 char				*ft_itoa(long n);
 char				*ft_itoa_base(long value, int base, short min);
-int					ft_isprint(int c);
 t_list				*ft_lst_last(t_list *list);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
@@ -89,6 +90,7 @@ void				ft_putstrn(char const *str, size_t n);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putwchart(wchar_t *str);
 int					ft_sqrt(int nb);
+size_t				ft_strany(char *str, int (*fct)(char));
 char				*ft_strcat(char *dest, const char *src);
 char				*ft_strccpy(char *dest, const char *src, int c);
 char				*ft_strcdup(const char *str, int c);
