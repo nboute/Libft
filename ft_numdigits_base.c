@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/18 18:32:32 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/20 16:42:35 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/22 15:15:59 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ size_t	ft_numdigits_base(const char *s, size_t base)
 		return (0);
 	while (!ft_isdigit(s[i]) && ft_tolower(s[i]) < 'a' &&
 			ft_tolower(s[i] > 'a' + (int)base - 10) && s[i])
+		i++;
+	if (s[i] == '-' || s[i] == '+')
 		i++;
 	while ((ft_isdigit(s[i]) || (base > 10 && ft_tolower(s[i]) >= 'a'
 				&& ft_tolower(s[i]) < 'a' + (int)base - 10)) && s[i])
