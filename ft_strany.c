@@ -6,13 +6,13 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/22 07:44:25 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/22 07:44:28 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/22 16:29:51 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strany(char *str, int (*fct)(char))
+size_t	ft_strany(const char *str, int (*fct)(char))
 {
 	size_t	i;
 

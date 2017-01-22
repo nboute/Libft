@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/22 13:38:46 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/22 16:30:01 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ void				ft_putstrn(char const *str, size_t n);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putwchart(wchar_t *str);
 int					ft_sqrt(int nb);
-size_t				ft_strany(char *str, int (*fct)(char));
+size_t				ft_strany(const char *str, int (*fct)(char));
 char				*ft_strcat(char *dest, const char *src);
 char				*ft_strccpy(char *dest, const char *src, int c);
 char				*ft_strcdup(const char *str, int c);
