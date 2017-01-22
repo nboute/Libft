@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/22 07:55:47 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/22 13:38:46 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,9 @@ int					ft_isalpha(int c);
 int					ft_isascii(int c);
 int					ft_isblank(char c);
 int					ft_isdigit(int c);
+int					ft_islower(int c);
 int					ft_isprint(int c);
+int					ft_isupper(int c);
 char				*ft_itoa(long n);
 char				*ft_itoa_base(long value, int base, short min);
 t_list				*ft_lst_last(t_list *list);

@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/01/22 07:58:26 by nboute           ###   ########.fr        #
+#    Updated: 2017/01/22 13:39:58 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,9 @@ SRCS = ft_atoi.c \
 	   ft_isascii.c \
 	   ft_isblank.c \
 	   ft_isdigit.c \
+	   ft_islower.c \
 	   ft_isprint.c \
+	   ft_isupper.c \
 	   ft_itoa.c \
 	   ft_itoa_base.c \
 	   ft_lstadd.c \
