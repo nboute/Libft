@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/01/22 07:44:59 by nboute           ###   ########.fr        #
+#    Updated: 2017/01/22 07:58:26 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,8 +72,10 @@ SRCS = ft_atoi.c \
 	   ft_strcmp.c \
 	   ft_strcn.c \
 	   ft_strcpy.c \
+	   ft_strcpy_free.c \
 	   ft_strdel.c \
 	   ft_strdup.c \
+	   ft_strdup_free.c \
 	   ft_strequ.c \
 	   ft_striter.c \
 	   ft_striteri.c \
@@ -103,6 +105,7 @@ SRCS = ft_atoi.c \
 	   ft_toupper.c \
 	   ft_utoa.c \
 	   ft_utoa_base.c \
+	   ft_wchartlen.c \
 	   get_next_line.c
 
 OBJ = $(SRCS:.c=.o)

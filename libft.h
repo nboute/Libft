@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/22 07:44:42 by nboute           ###   ########.fr       */
+/*   Updated: 2017/01/22 07:55:47 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,8 +100,10 @@ void				ft_strclr(char *s);
 int					ft_strcmp(const char *s1, const char *s2);
 size_t				ft_strcn(char *str, int c);
 char				*ft_strcpy(char *dest, const char *src);
+char				*ft_strcpy_free(char *dest, char *src);
 void				ft_strdel(char **as);
 char				*ft_strdup(const char *str);
+char				*ft_strdup_free(char *str);
 int					ft_strequ(char const *s1, char const *s2);
 void				ft_striter(char *s, void (*f)(char *));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
