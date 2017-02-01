@@ -6,13 +6,13 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/01 11:57:26 by nboute            #+#    #+#             */
-/*   Updated: 2017/02/01 11:58:01 by nboute           ###   ########.fr       */
+/*   Updated: 2017/02/01 12:20:55 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_lstrcat(char *dest, char *src, int dest_len, int src_len)
+char	*ft_lstrcat(char *dest, char *src, size_t dest_len, size_t src_len)
 {
 	long	*lptr_dest;
 	long	*lptr_src;

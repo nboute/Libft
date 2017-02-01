@@ -6,13 +6,13 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/01 11:56:02 by nboute            #+#    #+#             */
-/*   Updated: 2017/02/01 11:56:26 by nboute           ###   ########.fr       */
+/*   Updated: 2017/02/01 12:26:42 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_lstrdup(char *src, int src_len)
+char	*ft_lstrdup(char *src, size_t src_len)
 {
 	char	*str;
 	long	*lsrc;
