@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/02/01 12:28:09 by nboute           ###   ########.fr       */
+/*   Updated: 2017/02/01 12:56:59 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,8 +66,9 @@ void				ft_lstadd(t_list **alst, t_list *newl);
 void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-char				*ft_lstrcat(char *dst, char *src, size_t dlen, size_t slen);
-char				*ft_lstrdup(char *src, size_t slen);
+char				*ft_lstrcat(char *dst, const char *src, size_t dlen,
+					size_t slen);
+char				*ft_lstrdup(const char *src, size_t slen);
 float				ft_map(float val, float range, float min2, float max2);
 void				*ft_memalloc(size_t size);
 void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
