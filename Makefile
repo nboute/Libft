@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/02/01 12:02:07 by nboute           ###   ########.fr        #
+#    Updated: 2017/02/04 19:04:40 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -121,7 +121,7 @@ $(NAME): $(OBJ)
 	ranlib $(NAME)
 
 $(OBJ) : $(SRCS)
-	$(CC) -c $(SRCS) $(CFLAGS)
+	$(CC) -c $(CFLAGS) $(SRCS)
 
 clean :
 	rm -f $(OBJ)
