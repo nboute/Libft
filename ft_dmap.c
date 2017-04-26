@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_map.c                                           :+:      :+:    :+:   */
+/*   ft_dmap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/12 11:09:24 by nboute            #+#    #+#             */
-/*   Updated: 2017/04/20 16:49:52 by nboute           ###   ########.fr       */
+/*   Created: 2017/04/26 18:07:30 by nboute            #+#    #+#             */
+/*   Updated: 2017/04/26 18:07:35 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-double		ft_map(double val, double range, double min2, double max2)
+double		ft_dmap(double val, double range, double min2, double max2)
 {
 	if (!range)
 		return (0);

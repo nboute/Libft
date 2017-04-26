@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/02/06 18:31:10 by nboute           ###   ########.fr        #
+#    Updated: 2017/04/26 18:07:55 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,8 @@ SRCS = ft_atoi.c \
 	   ft_lstnew.c \
 	   ft_lstrcat.c \
 	   ft_lstrdup.c \
-	   ft_map.c \
+	   ft_dmap.c \
+	   ft_lmap.c \
 	   ft_memalloc.c \
 	   ft_memccpy.c \
 	   ft_memchr.c \
