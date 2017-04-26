@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/02/06 18:30:54 by nboute           ###   ########.fr       */
+/*   Updated: 2017/04/20 16:50:18 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 char				*ft_lstrcat(char *dst, const char *src, size_t dlen,
 					size_t slen);
 char				*ft_lstrdup(const char *src, size_t slen);
-float				ft_map(float val, float range, float min2, float max2);
+double				ft_map(double val, double range, double min2, double max2);
 void				*ft_memalloc(size_t size);
 void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void				*ft_memchr(const void *ptr, int c, size_t n);

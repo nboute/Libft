@@ -6,11 +6,11 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/12 11:09:24 by nboute            #+#    #+#             */
-/*   Updated: 2017/01/03 17:58:09 by nboute           ###   ########.fr       */
+/*   Updated: 2017/04/20 16:49:52 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-float		ft_map(float val, float range, float min2, float max2)
+double		ft_map(double val, double range, double min2, double max2)
 {
 	if (!range)
 		return (0);
