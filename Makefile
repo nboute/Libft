@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/04/26 18:07:55 by nboute           ###   ########.fr        #
+#    Updated: 2017/05/10 16:06:35 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,6 +53,7 @@ SRCS = ft_atoi.c \
 	   ft_memmove.c \
 	   ft_memset.c \
 	   ft_memswap.c \
+	   ft_nbdigits.c \
 	   ft_numdigits.c \
 	   ft_numdigits_base.c \
 	   ft_power.c \

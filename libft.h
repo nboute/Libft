@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/04/26 18:09:11 by nboute           ###   ########.fr       */
+/*   Updated: 2017/05/10 16:06:19 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,7 @@ void				ft_memdel(void **ap);
 void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memset(void *ptr, int value, size_t num);
 void				ft_memswap(void **adr1, void **adr2);
+size_t				ft_nbdigits(long val);
 size_t				ft_numdigits(const char *s);
 size_t				ft_numdigits_base(const char *s, size_t base);
 long				ft_power(long nb, int pow);
