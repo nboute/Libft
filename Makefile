@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/05/10 16:06:35 by nboute           ###   ########.fr        #
+#    Updated: 2017/07/15 17:08:44 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -105,6 +105,7 @@ SRCS = ft_atoi.c \
 	   ft_strsub.c \
 	   ft_strtolower.c \
 	   ft_strtrim.c \
+	   ft_swap.c \
 	   ft_tabdel.c \
 	   ft_tablen.c \
 	   ft_tabnew.c \

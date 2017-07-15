@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/05/10 16:06:19 by nboute           ###   ########.fr       */
+/*   Updated: 2017/07/15 17:08:33 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -134,6 +134,7 @@ char				*ft_strstr(const char *s1, const char *s2);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtolower(char *s);
 char				*ft_strtrim(char const *s);
+void				ft_swap(void *var1, void *var2, size_t	len);
 void				ft_tabdel(char **tab);
 size_t				ft_tablen(char **tab);
 char				**ft_tabnew(int y, int x, char c);
