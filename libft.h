@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/07/15 17:08:33 by nboute           ###   ########.fr       */
+/*   Updated: 2017/07/27 16:13:28 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ typedef struct		s_list
 int					ft_atoi(const char *str);
 long				ft_atol(const char *str);
 void				ft_bzero(void *s, size_t n);
+void				*ft_fast_memcpy(void *dest, void *src, size_t n);
 int					ft_getnbr(const char *str);
 int					ft_getnbr_base(const char *s, size_t b);
 int					ft_isalnum(int c);

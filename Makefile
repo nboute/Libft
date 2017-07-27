@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/07/15 17:08:44 by nboute           ###   ########.fr        #
+#    Updated: 2017/07/27 16:13:39 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ CC = gcc
 SRCS = ft_atoi.c \
 	   ft_atol.c \
 	   ft_bzero.c \
+	   ft_fast_memcpy.c \
 	   ft_getnbr.c \
 	   ft_getnbr_base.c \
 	   ft_isalnum.c \
