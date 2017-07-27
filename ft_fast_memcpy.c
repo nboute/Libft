@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 10:51:18 by nboute            #+#    #+#             */
-/*   Updated: 2017/07/27 16:12:41 by nboute           ###   ########.fr       */
+/*   Updated: 2017/07/27 16:34:08 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_fast_memcpy(void *dest, void *src, size_t n)
 	while (n - i >= sizeof(long))
 	{
 		*ptrd++ = *ptrs++;
-		i += sizeof(long);;
+		i += sizeof(long);
 	}
 	while (i < n)
 	{
