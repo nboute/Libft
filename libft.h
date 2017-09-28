@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/07/27 16:13:28 by nboute           ###   ########.fr       */
+/*   Updated: 2017/09/28 15:35:20 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,6 @@ void				ft_putnchar(char c, size_t n);
 void				ft_putstr(char const *s);
 void				ft_putstrn(char const *str, size_t n);
 void				ft_putstr_fd(char const *s, int fd);
-void				ft_putwchart(wchar_t *str);
 int					ft_sqrt(int nb);
 size_t				ft_strany(const char *str, int (*fct)(char));
 char				*ft_strcat(char *dest, const char *src);
@@ -143,6 +142,5 @@ int					ft_tolower(int c);
 int					ft_toupper(int c);
 char				*ft_utoa(unsigned long n);
 char				*ft_utoa_base(unsigned long value, int base, short min);
-size_t				ft_wchartlen(wchar_t *str);
 
 #endif
