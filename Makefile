@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/07/27 16:13:39 by nboute           ###   ########.fr        #
+#    Updated: 2017/09/28 15:28:12 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ CC = gcc
 SRCS = ft_atoi.c \
 	   ft_atol.c \
 	   ft_bzero.c \
+	   ft_dmap.c \
 	   ft_fast_memcpy.c \
 	   ft_getnbr.c \
 	   ft_getnbr_base.c \
@@ -34,8 +35,9 @@ SRCS = ft_atoi.c \
 	   ft_isupper.c \
 	   ft_itoa.c \
 	   ft_itoa_base.c \
-	   ft_lstadd.c \
+	   ft_lmap.c \
 	   ft_lst_last.c \
+	   ft_lstadd.c \
 	   ft_lstdel.c \
 	   ft_lstdelone.c \
 	   ft_lstiter.c \
@@ -43,8 +45,6 @@ SRCS = ft_atoi.c \
 	   ft_lstnew.c \
 	   ft_lstrcat.c \
 	   ft_lstrdup.c \
-	   ft_dmap.c \
-	   ft_lmap.c \
 	   ft_memalloc.c \
 	   ft_memccpy.c \
 	   ft_memchr.c \
@@ -67,8 +67,8 @@ SRCS = ft_atoi.c \
 	   ft_putnbr_fd.c \
 	   ft_putnchar.c \
 	   ft_putstr.c \
-	   ft_putstrn.c \
 	   ft_putstr_fd.c \
+	   ft_putstrn.c \
 	   ft_sqrt.c \
 	   ft_strany.c \
 	   ft_strcat.c \
@@ -114,7 +114,6 @@ SRCS = ft_atoi.c \
 	   ft_toupper.c \
 	   ft_utoa.c \
 	   ft_utoa_base.c \
-	   ft_wchartlen.c \
 	   get_next_line.c
 
 OBJ = $(SRCS:.c=.o)
