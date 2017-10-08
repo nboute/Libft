@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/10/08 15:36:21 by nboute           ###   ########.fr       */
+/*   Updated: 2017/10/08 20:01:32 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ typedef struct		s_list
 }					t_list;
 
 int					ft_atoi(const char *str);
+int					ft_atoi_base(char *str, char const *base);
 long				ft_atol(const char *str);
 void				ft_bzero(void *s, size_t n);
 void				*ft_fast_memcpy(void *dest, void *src, size_t n);

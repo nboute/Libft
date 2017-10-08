@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/10/08 15:34:21 by nboute           ###   ########.fr        #
+#    Updated: 2017/10/08 20:01:45 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ CFLAGS = -Wall -Wextra -Werror
 CC = gcc
 
 SRCS = ft_atoi.c \
+	   ft_atoi_base.c \
 	   ft_atol.c \
 	   ft_bzero.c \
 	   ft_dmap.c \
