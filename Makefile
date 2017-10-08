@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/09/28 15:28:12 by nboute           ###   ########.fr        #
+#    Updated: 2017/10/08 15:22:41 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,6 +99,7 @@ SRCS = ft_atoi.c \
 	   ft_strndup.c \
 	   ft_strnequ.c \
 	   ft_strnew.c \
+	   ft_strnjoin.c \
 	   ft_strnstr.c \
 	   ft_strrchr.c \
 	   ft_strsplit.c \
