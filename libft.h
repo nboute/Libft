@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/10/08 15:22:29 by nboute           ###   ########.fr       */
+/*   Updated: 2017/10/08 15:36:21 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,6 +116,7 @@ int					ft_strequ(char const *s1, char const *s2);
 void				ft_striter(char *s, void (*f)(char *));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strjoinn(char const *str, char *str2, size_t n);
 char				*ft_strjoin_free(char *s1, char *s2);
 size_t				ft_strlcat(char *dest, const char *src, size_t n);
 size_t				ft_strlen(const char *str);
@@ -127,7 +128,7 @@ char				*ft_strncpy(char *dest, const char *src, size_t n);
 char				*ft_strndup(const char *str, size_t n);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strnew(size_t size);
-char				*ft_strnjoin(char *str, char *str2, size_t n);
+char				*ft_strnjoin(char *str, char const *str2, size_t n);
 char				*ft_strnstr(const char *s1, const char *src, size_t n);
 char				*ft_strrchr(const char *str, int c);
 char				**ft_strsplit(char const *str, char c);
