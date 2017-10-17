@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 19:31:19 by nboute            #+#    #+#             */
-/*   Updated: 2017/10/17 11:45:31 by nboute           ###   ########.fr       */
+/*   Updated: 2017/10/17 11:47:08 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static size_t	check_base(char const *base)
 {
-	size_t	i;
-	size_t	j;
+	size_t		i;
+	size_t		j;
 
 	i = 0;
 	while (base[i])
@@ -33,9 +33,9 @@ static size_t	check_base(char const *base)
 
 static size_t	check_str(char *str, char const *base)
 {
-	size_t	i;
-	size_t	j;
-	short	exists;
+	size_t		i;
+	size_t		j;
+	short		exists;
 
 	i = 0;
 	while (str[i])
@@ -55,7 +55,7 @@ static size_t	check_str(char *str, char const *base)
 	return (i);
 }
 
-int	ft_atoi_base(char *str, char const *base)
+int				ft_atoi_base(char *str, char const *base)
 {
 	size_t	n;
 	size_t	s[2];
@@ -73,7 +73,7 @@ int	ft_atoi_base(char *str, char const *base)
 		j = 0;
 		while (base[j] != str[s[1] - n] && base[j])
 			j++;
-		i = i +  j * ft_power(s[0], n - 1);
+		i = i + j * ft_power(s[0], n - 1);
 		n++;
 	}
 	return (i);
