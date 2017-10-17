@@ -6,7 +6,7 @@
 #    By: nboute <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 16:19:54 by nboute            #+#    #+#              #
-#    Updated: 2017/10/08 20:01:45 by nboute           ###   ########.fr        #
+#    Updated: 2017/10/17 11:43:52 by nboute           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,8 @@ SRCS = ft_atoi.c \
 	   ft_lstnew.c \
 	   ft_lstrcat.c \
 	   ft_lstrdup.c \
+	   ft_min.c \
+	   ft_max.c \
 	   ft_memalloc.c \
 	   ft_memccpy.c \
 	   ft_memchr.c \

@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:59:15 by nboute            #+#    #+#             */
-/*   Updated: 2017/10/08 20:01:32 by nboute           ###   ########.fr       */
+/*   Updated: 2017/10/17 11:43:34 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,15 @@ int					ft_atoi(const char *str);
 int					ft_atoi_base(char *str, char const *base);
 long				ft_atol(const char *str);
 void				ft_bzero(void *s, size_t n);
+char				ft_cmax(char a, char b);
+char				ft_cmin(char a, char b);
+double				ft_dmax(double a, double b);
+double				ft_dmin(double a, double b);
 void				*ft_fast_memcpy(void *dest, void *src, size_t n);
 int					ft_getnbr(const char *str);
 int					ft_getnbr_base(const char *s, size_t b);
+int					ft_imax(int a, int b);
+int					ft_imin(int a, int b);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
@@ -62,6 +68,8 @@ int					ft_isprint(int c);
 int					ft_isupper(int c);
 char				*ft_itoa(long n);
 char				*ft_itoa_base(long value, int base, short min);
+long				ft_lmax(long a, long b);
+long				ft_lmin(long a, long b);
 t_list				*ft_lst_last(t_list *list);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
