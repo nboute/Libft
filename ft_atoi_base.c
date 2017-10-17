@@ -6,7 +6,7 @@
 /*   By: nboute <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/08 19:31:19 by nboute            #+#    #+#             */
-/*   Updated: 2017/10/08 20:01:21 by nboute           ###   ########.fr       */
+/*   Updated: 2017/10/17 11:45:31 by nboute           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,9 @@ int	ft_atoi_base(char *str, char const *base)
 
 	n = 1;
 	i = 0;
-	if (!(s[0] = check_base(base)) || !(s[1] = check_str(str, base)))
+	if (!(s[0] = check_base(base)))
+		return (-1);
+	if (!(s[1] = check_str(str, base)))
 		return (-1);
 	while (n <= ft_strlen(str))
 	{
